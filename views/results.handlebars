@@ -1,0 +1,13 @@
+<div class="content">
+ {{#each questions}}
+    <p>{{{this.question}}}</p>
+    <p>oui:{{{this.answer.oui}}}| non:{{{this.answer.non}}}</p>
+ {{/each}}
+    <div>
+        <h1>Rajouter une question</h1>
+    <form method="post" action="/results"> 
+        <input type="text" name="question">
+        <input type="submit" value="Enregistrer">
+    </form>
+    </div>
+</div>
